@@ -1,159 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CliveFest - Home</title>
-    <link rel="icon" type="image/x-icon" href="img/logo-top.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-<body>
-    <!-- Navigatie bar -->
-    <nav class="navigatie">
-        <a href="index.html"><img src="img/logo-top.png" height="70px" width="70px" class="logo-top" alt="Logo Top"></a>
-        <a class="navigatie-link-Home white bold" href="index.html"><i class="fa fa-home"></i> Home</a>
-        <a class="navigatie-links white bold md-small" href="info.html"><i class="fa fa-info"></i> Info</a>
-        <a class="navigatie-links white bold md-small" href="agenda.html"><i class="fa fa-calendar"></i> Agenda</a>
-        <a class="navigatie-links white bold md-small" href="contact.html"><i class="fa fa-phone"></i> Contact</a>
-    </nav>
+<body class="w3-black">
 
-    <div class="spacer-klein"></div>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="epstein1.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="jeffrey-epstein-documents-full.pdf" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>FULL LIST</p>
+  </a>
+  <a href="jeffery-epstein-documents-full-page-109-243.pdf" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>KRAMER LIST</p>
+  </a>
+  <a href="KramerEpstein.jpg" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>PHOTO's</p>
+  </a>
+</nav>
 
-    <!-- Header -->
-    <header>
-        <div id="header">
-            <div class="logo"><img src="img/logo.png" height="200px" width="200px" class="logo center" alt="Logo"></div>
-            <div class="grid-container">
-                <div class="column-item1">
-                    <div class="row-item1">
-                    <div class="spacer-klein"></div>
-                    <div class="headerimg"><img src="img/headerimagehome.jpg" alt="Header plaatje"></div>
-                    <div class="tekstblok">
-                        <p class="secondary text-xl center">CliveFest: Music of Tommorow.</p>
-                        <a href="login.html"><button class="button button-secondary button-right">Login  <i class="fa fa-sign-in"></i></button></a>
-                    </div>
-                    </div>
-                    <div class="row-item2">
-                        <div class="radioblok"><h3>Nummer van vandaag:</h3><p><iframe src="https://open.spotify.com/embed/track/6b8Be6ljOzmkOmFslEb23P?utm_source=generator&theme=0" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p></div>
-                    </div>
-                </div>
-                <div class="column-item2 md-hidden">
-                    <div class="spacer"></div>
-                    <section>
-                        <section>
-                            <h3>Nieuws</h3>
-                            <footer>
-                            </footer>
-                        </section>
-                        <hr />
-                        <section>
-                            <img src="img/festival.jpeg"  height="350px"/>
-                            <h3>CliveFest Amsterdam</h3>
-                            <p></p>
-                            <footer>
-                                <ul class="ul-button">
-                                    <li><a href="" class="button">Meer Info <i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="jeffrey-epstein-documents-full.pdf" class="w3-bar-item w3-button" style="width:25% !important">FULL LIST</a>
+    <a href="jeffery-epstein-documents-full-page-109-243.pdf" class="w3-bar-item w3-button" style="width:25% !important">KRAMER LIST</a>
+    <a href="KramerEpstein.jpg" class="w3-bar-item w3-button" style="width:25% !important">PHOTO's</a>
+  </div>
+</div>
 
-    <div class="spacer"></div>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Kramer</span> Exposed.</h1>
+    <p>Kramer's vriendschap met Jeffrey Epstein.</p>
+    <img src="KramerEpstein.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-    <!-- Main -->
-    <main>
-        <div class="grid-container">
-            <div class="row-item1">
-                <section class="tiles sd-hidden">
-                    <article class="style1">
-                        <span class="image">
-                            <img src="img/pic01.jpg" alt="" />
-                        </span>
-                        <a>
-                            <h2>Muziek</h2>
-                        </a>
-                    </article>
-                    <article class="style2">
-                        <span class="image">
-                            <img src="img/pic02.jpg" alt="" />
-                        </span>
-                        <a>
-                            <h2>Dans</h2>
-                        </a>
-                    </article>
-                    <article class="style3">
-                        <span class="image">
-                            <img src="img/pic03.jpg" alt="" />
-                        </span>
-                        <a>
-                            <h2>Plezier</h2>
-                        </a>
-                    </article>
-                </section>
-            </div>
-            <div class="row-item2">
-                <section class="tiles sd-hidden">
-                    <article class="style1">
-                        <span>
-                            <a>
-                                <h2>Geniet van onze muziek...</h2>
-                            </a>
-                        </span>
-                    </article>
-                    <article class="style2">
-                        <span class="image">
-                            <a>
-                                <h2>...dans er op los...</h2>
-                            </a>
-                        </span>
-                    </article>
-                    <article class="style3">
-                        <span class="image">
-                            <a>
-                                <h2>...en geniet ervan!</h2>
-                            </a>
-                        </span>
-                    </article>
-                </section>
-            </div>
-        </div>
-        </div>
-    </main>
-
-    <div class="spacer"></div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-            <div class="col-12">
-                <h4 class="white">CliveFest:</h4>
-                <p class="text-justify">Music of Tommorow</p>
-            </div>
-            <div class="col-6">
-                <hr>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="agenda.html">Agenda</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <hr>
-            </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">Door Daniël en Finn</p>
-            </div>
-        </div>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">The Kramer Story</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      Kwaadaardige muziekdocent en Amerikaanse miljadair
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Legaliteit</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:2%"></div>
     </div>
+    <p class="w3-wide">Pedofieliteit</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Tripjes in de prive jet
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Bezoeken op het eiland
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Sloppy Toppies
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Ontmoetingen
+      </div>
+    </div>
+    
+    <!-- Grid for pricing tables 
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Introductie</h3>  
+    <img src="kramerhoofd.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Henk Kramer</span> -Houd van minderjarige meisjes en geeft ze hogere cijfer.</p>
+    <p>Pedo.</p><br>
+    
+    <img src="epsteinhoofd.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Jeffery Epstein</span> -Miljadair die ook van minderjarige meisjes houd.</p>
+    <p>Ook een pedo.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="epstein2.jpg" style="width:100%">
+        <img src="epstein6.jpg" style="width:100%">
+        <img src="epstein3.jpg" style="width:100%">
+        <img src="epstein7.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="epstein4.jpg" style="width:100%">
+        <img src="epstein5.jpg" style="width:100%">
+        <img src="epsteinvictim.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Henk Kramer</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p>Muziekschool Henk Kramer</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +31 6 14130097</p>
+      <p><i class="fa fa-globe fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Website: https://www.muziekschoolhenkkramer.nl</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: info@muziekschoolhenkkramer.nl</p>
+      <br>
+
+      <p>Epstein Island</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 18°18'09"N 64°49'27"W | Little Saint James</p>
+    </div><br>
+    <p>Let's (get in) touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p>Socials</p>
+    <a href="https://bit.ly/3bim457"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
+  <!-- End footer -->
   </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
